@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>media quires 2</title>
+        <style>
+            /*
+            css media quires syntax
+        @media not|only mediatype and (mediafeature and|or|not mediafeature) {
+        CSS-Code;
+        }
+        */
+        .common{
+            width: 300px;
+            height: 300px;
+        }
+        @media screen and (max-width:575px){
+            .xs{
+                background:red
+            }
+        }
+        @media screen and (min-width:576px) and (max-width:767px){
+            .sm{
+                background:blue;
+                border-radius: 100%;
+            }
+        }
+        @media screen and (min-width:768px) and (max-width:991px){
+            .md{
+                width: 500px;
+                height: 500px;
+                background: purple;
+            }
+        }
+        @media screen and (min-width:992px) and (max-width:1199px) {
+            .lg{
+                width: 100px;
+                height: 700px;
+                background: black;
+            }
+        }
+        @media screen and (min-width:1200px) and (max-width:1399px) {
+            .xl{
+                width: 600px;
+                height: 600px;
+                background: pink;
+                border-radius: 100%;
+                display: none;
+            }
+        }
+        @media screen and (min-width:1400px) and (max-width:1699px) {
+            .xxl{
+                width: 800px;
+                height: 100px;
+                background: violet
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class=" common xs sm md lg xl xxl"></div>
+    </body>
+</html>
